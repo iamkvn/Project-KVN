@@ -1,0 +1,9 @@
+.u-grid {
+  display: grid !important;
+  grid-template-columns: repeat(12, 1fr) !important;
+  gap: 1rem !important;
+}
+
+.u-hidden {
+  display: none !important;
+}
