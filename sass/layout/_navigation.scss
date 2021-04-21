@@ -1,8 +1,17 @@
 .nav {
   position: relative;
+  margin-bottom: 3rem;
 
   &__logo {
     grid-column: 1 / 2;
+    font-family: 'Major Mono Display', monospace;
+    color: var(--color-grayish-dark-blue);
+    font-size: 3.5rem;
+
+    .v {
+      position: relative;
+      top: 0.5rem;
+    }
   }
 
   &__menu {

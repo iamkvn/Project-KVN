@@ -4,7 +4,8 @@
   --color-grayish-dark-blue: #33323d;
   --color-very-light-grey: #fafafa;
   --color-light-grey: #eaeaeb;
-  --color-bright-red: #f43030; }
+  --color-bright-red: #f43030;
+  --color-dark-slate-gray: #49506a; }
 
 *,
 *::after,
@@ -32,12 +33,33 @@ a {
   text-transform: uppercase; }
 
 .heading {
-  font-family: 'Ibarra Real Nova', serif; }
+  font-family: 'Ibarra Real Nova', serif;
+  color: var(--color-grayish-dark-blue); }
+  .heading-1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    line-height: 4rem;
+    font-size: 4rem; }
+  .heading-2 {
+    font-weight: 700;
+    line-height: 4rem;
+    font-size: 3.5rem; }
+
+.paragraph {
+  color: var(--color-grayish-dark-blue); }
 
 .nav {
-  position: relative; }
+  position: relative;
+  margin-bottom: 3rem; }
   .nav__logo {
-    grid-column: 1 / 2; }
+    grid-column: 1 / 2;
+    font-family: 'Major Mono Display', monospace;
+    color: var(--color-grayish-dark-blue);
+    font-size: 3.5rem; }
+    .nav__logo .v {
+      position: relative;
+      top: 0.5rem; }
   .nav__menu {
     grid-column: 12 / 13;
     justify-self: end;
@@ -62,6 +84,33 @@ a {
     cursor: pointer;
     letter-spacing: 0.2rem; }
 
+.header {
+  height: 60rem;
+  background-image: url("../images/nyc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 7rem; }
+  .header .paragraph {
+    color: var(--color-dark-slate-gray); }
+
+.section-about__img {
+  grid-column: 1 / 13;
+  margin-bottom: 5rem; }
+
+.section-about .heading-2 {
+  grid-column: 1 / 13;
+  margin-bottom: 3rem; }
+
+.section-about .paragraph {
+  grid-column: 1 / 13;
+  margin-bottom: 2rem; }
+
+.section-about .btn {
+  grid-column: 1 / 13; }
+
 .u-grid {
   display: grid !important;
   grid-template-columns: repeat(12, 1fr) !important;
@@ -69,3 +118,9 @@ a {
 
 .u-hidden {
   display: none !important; }
+
+.u-mb-sm {
+  margin-bottom: 1rem; }
+
+.u-mb-md {
+  margin-bottom: 2rem; }
