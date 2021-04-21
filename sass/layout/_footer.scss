@@ -1,9 +1,11 @@
 .footer {
   background-color: var(--color-grayish-dark-blue);
+  padding: 3rem;
+  height: 354px;
 
   &__logo {
     font-family: 'Major Mono Display', monospace;
-    color: var(--color-grayish-dark-blue);
+    color: var(--color-very-light-grey);
     font-size: 3.5rem;
 
     .v {
@@ -12,20 +14,39 @@
     }
   }
   &__nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
   &__list {
+    text-align: center;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   &__item {
   }
   &__link {
+    color: var(--color-very-light-grey);
+    letter-spacing: 0.2rem;
+    font-weight: 100;
   }
 
   .social-media {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    width: 12rem;
+
     &__list {
     }
     &__item {
     }
     &__link {
+      color: var(--color-very-light-grey);
     }
     &__icon {
     }
