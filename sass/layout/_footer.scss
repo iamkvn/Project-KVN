@@ -1,0 +1,33 @@
+.footer {
+  background-color: var(--color-grayish-dark-blue);
+
+  &__logo {
+    font-family: 'Major Mono Display', monospace;
+    color: var(--color-grayish-dark-blue);
+    font-size: 3.5rem;
+
+    .v {
+      position: relative;
+      top: 0.5rem;
+    }
+  }
+  &__nav {
+  }
+  &__list {
+  }
+  &__item {
+  }
+  &__link {
+  }
+
+  .social-media {
+    &__list {
+    }
+    &__item {
+    }
+    &__link {
+    }
+    &__icon {
+    }
+  }
+}

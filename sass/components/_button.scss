@@ -1,0 +1,14 @@
+.btn {
+  color: var(--color-grayish-dark-blue);
+  border: 1px solid #33323d;
+  text-align: center;
+  padding: 1rem 3rem;
+  font-weight: 200;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+
+  &:hover {
+    color: var(--color-very-light-grey);
+    background-color: var(--color-grayish-dark-blue);
+  }
+}
