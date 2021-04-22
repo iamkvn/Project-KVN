@@ -1,0 +1,9 @@
+@mixin line {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--color-grayish-dark-blue);
+  opacity: 0.2;
+  position: relative;
+}

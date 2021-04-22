@@ -3,52 +3,81 @@
   padding: 3rem;
   height: 354px;
 
+  @media only screen and (min-width: $bp-md) {
+    height: 8rem;
+  }
+
   &__logo {
     font-family: 'Major Mono Display', monospace;
     color: var(--color-very-light-grey);
     font-size: 3.5rem;
+
+    @media only screen and (min-width: $bp-md) {
+      margin-right: 5rem;
+    }
 
     .v {
       position: relative;
       top: 0.5rem;
     }
   }
+
   &__nav {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    @media only screen and (min-width: $bp-md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
+
   &__list {
     text-align: center;
     height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    @media only screen and (min-width: $bp-md) {
+      flex-direction: row;
+      height: 3rem;
+      width: 30rem;
+      margin-right: auto;
+      justify-content: space-between;
+    }
   }
-  &__item {
-  }
+
+  // &__item {
+  // }
+
   &__link {
     color: var(--color-very-light-grey);
     letter-spacing: 0.2rem;
-    font-weight: 100;
+    font-weight: 200;
+    font-size: 1.2rem;
   }
 
   .social-media {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 2.5rem;
     width: 12rem;
 
-    &__list {
-    }
-    &__item {
-    }
+    // &__list {
+    // }
+
+    // &__item {
+    // }
+
     &__link {
       color: var(--color-very-light-grey);
     }
-    &__icon {
-    }
+
+    // &__icon {
+    // }
   }
 }

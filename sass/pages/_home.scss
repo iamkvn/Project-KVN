@@ -29,6 +29,10 @@
   .section-about {
     margin-bottom: 10rem;
 
+    @media only screen and (min-width: $bp-md) {
+      margin-bottom: 3rem;
+    }
+
     &__img {
       grid-column: 1 / 13;
       margin-bottom: 5rem;
@@ -59,15 +63,10 @@
       margin-bottom: 3rem;
 
       &::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 0.1rem;
-        background-color: var(--color-grayish-dark-blue);
-        opacity: 0.2;
-        position: relative;
+        @include line;
         top: -3rem;
       }
+
       @media only screen and (min-width: $bp-md) {
         grid-column: 7 / 13;
         font-size: 4rem;
@@ -82,13 +81,7 @@
       margin-bottom: 2rem;
 
       &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 0.1rem;
-        background-color: var(--color-grayish-dark-blue);
-        opacity: 0.2;
-        position: relative;
+        @include line;
         bottom: -13rem;
       }
 
@@ -123,12 +116,31 @@
       text-align: center;
       // align-self: center;
       // margin-bottom: 3rem;
+
+      @media only screen and (min-width: $bp-md) {
+        grid-column: 1 / 7;
+        text-align: left;
+        font-size: 4rem;
+      }
     }
 
     .btn {
       grid-column: 1 / 13;
       justify-self: center;
       align-self: start;
+
+      @media only screen and (min-width: $bp-md) {
+        grid-column: 10 / 13;
+        align-self: center;
+      }
+
+      &::before {
+        @media only screen and (min-width: $bp-md) {
+          @include line;
+          top: 1.5rem;
+          right: 18rem;
+        }
+      }
     }
   }
 }
