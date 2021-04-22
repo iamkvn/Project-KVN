@@ -52,6 +52,10 @@
     @media only screen and (min-width: $bp-lg) {
       grid-column: 8 / 13;
     }
+
+    @media only screen and (min-width: $bp-xl) {
+      grid-column: 9 / 13;
+    }
   }
 
   //   &__item {
