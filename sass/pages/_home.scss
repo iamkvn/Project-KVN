@@ -8,8 +8,18 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 6rem;
     margin-bottom: 7rem;
+
+    @media only screen and (min-width: $bp-md) {
+      padding-top: 9rem;
+    }
+
+    .heading-1 {
+      @media only screen and (min-width: $bp-md) {
+        font-size: 5rem;
+      }
+    }
 
     .paragraph {
       color: var(--color-dark-gray);
@@ -23,6 +33,25 @@
       grid-column: 1 / 13;
       margin-bottom: 5rem;
       justify-self: center;
+
+      @media only screen and (min-width: $bp-md) {
+        margin-bottom: 0;
+      }
+
+      &--mobile {
+        @media only screen and (min-width: $bp-md) {
+          display: none;
+        }
+      }
+      &--tablet {
+        display: none;
+
+        @media only screen and (min-width: $bp-md) {
+          display: block;
+          grid-column: 1 / 6;
+          grid-row: 1 / 4;
+        }
+      }
     }
 
     .heading-2 {
@@ -38,6 +67,13 @@
         opacity: 0.2;
         position: relative;
         top: -3rem;
+      }
+      @media only screen and (min-width: $bp-md) {
+        grid-column: 7 / 13;
+        font-size: 4rem;
+        padding-top: 3rem;
+        align-self: start;
+        margin-bottom: 0;
       }
     }
 
@@ -55,11 +91,21 @@
         position: relative;
         bottom: -13rem;
       }
+
+      @media only screen and (min-width: $bp-md) {
+        grid-column: 7 / 13;
+        margin-bottom: 0;
+      }
     }
 
     .btn {
       grid-column: 1 / 13;
       justify-self: center;
+
+      @media only screen and (min-width: $bp-md) {
+        grid-column: 7 / 11;
+        align-self: start;
+      }
     }
   }
 

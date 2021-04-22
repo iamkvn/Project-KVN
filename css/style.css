@@ -161,8 +161,14 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 6rem;
     margin-bottom: 7rem; }
+    @media only screen and (min-width: 48em) {
+      .home .header {
+        padding-top: 9rem; } }
+    @media only screen and (min-width: 48em) {
+      .home .header .heading-1 {
+        font-size: 5rem; } }
     .home .header .paragraph {
       color: var(--color-dark-gray); }
   .home .section-about {
@@ -171,6 +177,19 @@ a {
       grid-column: 1 / 13;
       margin-bottom: 5rem;
       justify-self: center; }
+      @media only screen and (min-width: 48em) {
+        .home .section-about__img {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 48em) {
+        .home .section-about__img--mobile {
+          display: none; } }
+      .home .section-about__img--tablet {
+        display: none; }
+        @media only screen and (min-width: 48em) {
+          .home .section-about__img--tablet {
+            display: block;
+            grid-column: 1 / 6;
+            grid-row: 1 / 4; } }
     .home .section-about .heading-2 {
       grid-column: 1 / 13;
       margin-bottom: 3rem; }
@@ -183,6 +202,13 @@ a {
         opacity: 0.2;
         position: relative;
         top: -3rem; }
+      @media only screen and (min-width: 48em) {
+        .home .section-about .heading-2 {
+          grid-column: 7 / 13;
+          font-size: 4rem;
+          padding-top: 3rem;
+          align-self: start;
+          margin-bottom: 0; } }
     .home .section-about .paragraph {
       grid-column: 1 / 13;
       margin-bottom: 2rem; }
@@ -195,9 +221,17 @@ a {
         opacity: 0.2;
         position: relative;
         bottom: -13rem; }
+      @media only screen and (min-width: 48em) {
+        .home .section-about .paragraph {
+          grid-column: 7 / 13;
+          margin-bottom: 0; } }
     .home .section-about .btn {
       grid-column: 1 / 13;
       justify-self: center; }
+      @media only screen and (min-width: 48em) {
+        .home .section-about .btn {
+          grid-column: 7 / 11;
+          align-self: start; } }
   .home .section-contact {
     height: 215px; }
     .home .section-contact .heading-2 {
