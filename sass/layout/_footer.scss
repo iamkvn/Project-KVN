@@ -7,6 +7,10 @@
     height: 8rem;
   }
 
+  @media only screen and (min-width: $bp-lg) {
+    padding: 3rem 6rem;
+  }
+
   &__logo {
     font-family: 'Major Mono Display', monospace;
     color: var(--color-very-light-grey);
