@@ -11,9 +11,9 @@
   }
 
   &-2 {
-    font-weight: 700;
+    font-weight: 600;
     line-height: 4rem;
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   //heading-3
@@ -22,4 +22,5 @@
 
 .paragraph {
   color: var(--color-grayish-dark-blue);
+  font-weight: 200;
 }
