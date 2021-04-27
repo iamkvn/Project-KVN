@@ -164,10 +164,10 @@
 .section-contact {
   height: 215px;
   margin-bottom: 5rem;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // text-align: center;
+
+  @media only screen and (min-width: $bp-md) {
+    margin-bottom: 0;
+  }
 
   .heading-2 {
     grid-column: 1 / 13;
@@ -175,8 +175,6 @@
     align-self: center;
     text-align: center;
     margin-bottom: 1rem;
-    // align-self: center;
-    // margin-bottom: 3rem;
 
     @media only screen and (min-width: $bp-md) {
       grid-column: 1 / 7;
