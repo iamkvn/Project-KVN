@@ -7,9 +7,19 @@
     margin-bottom: 5rem;
   }
 
-  .portfolio {
+  @media only screen and (min-width: $bp-xl) {
+    height: 50rem;
+  }
+
+  &__img {
     grid-column: 1 / 13;
     margin-bottom: 5rem;
+
+    @media only screen and (min-width: $bp-md) {
+      grid-row: 1 / 4;
+      margin-bottom: 0;
+      align-self: center;
+    }
 
     &--mobile {
       @media only screen and (min-width: $bp-md) {
@@ -22,10 +32,9 @@
 
       @media only screen and (min-width: $bp-md) {
         display: block;
-        // grid-column: 1 / 7;
-        grid-row: 1 / 4;
-        margin-bottom: 0;
-        align-self: center;
+      }
+      @media only screen and (min-width: $bp-xl) {
+        display: none;
       }
     }
 
@@ -50,6 +59,9 @@
       @media only screen and (min-width: $bp-md) {
         bottom: 4rem;
       }
+      @media only screen and (min-width: $bp-xl) {
+        bottom: 6.5rem;
+      }
     }
 
     @media only screen and (min-width: $bp-md) {
@@ -70,10 +82,12 @@
       @media only screen and (min-width: $bp-md) {
         top: 13rem;
       }
+      @media only screen and (min-width: $bp-xl) {
+        top: 16rem;
+      }
     }
 
     @media only screen and (min-width: $bp-md) {
-      // grid-column: 8 / 13;
       margin-bottom: 0;
       align-self: center;
     }
@@ -84,14 +98,18 @@
     justify-self: start;
 
     @media only screen and (min-width: $bp-md) {
-      // grid-column: 8 / 13;
       align-self: start;
     }
   }
 
   &--0 {
-    .portfolio--tablet {
+    .portfolio-index__img--tablet {
       @media only screen and (min-width: $bp-md) {
+        grid-column: 1 / 7;
+      }
+    }
+    .portfolio-index__img--desktop {
+      @media only screen and (min-width: $bp-xl) {
         grid-column: 1 / 7;
       }
     }
@@ -100,10 +118,22 @@
       @media only screen and (min-width: $bp-md) {
         grid-column: 8 / 13;
       }
+      @media only screen and (min-width: $bp-lg) {
+        grid-column: 7 / 11;
+      }
+      @media only screen and (min-width: $bp-xl) {
+        grid-column: 8 / 11;
+      }
     }
     .paragraph {
       @media only screen and (min-width: $bp-md) {
         grid-column: 8 / 13;
+      }
+      @media only screen and (min-width: $bp-lg) {
+        grid-column: 7 / 11;
+      }
+      @media only screen and (min-width: $bp-xl) {
+        grid-column: 8 / 11;
       }
     }
 
@@ -111,12 +141,24 @@
       @media only screen and (min-width: $bp-md) {
         grid-column: 8 / 13;
       }
+      @media only screen and (min-width: $bp-lg) {
+        grid-column: 7 / 11;
+      }
+      @media only screen and (min-width: $bp-xl) {
+        grid-column: 8 / 11;
+      }
     }
   }
 
   &--1 {
-    .portfolio--tablet {
+    .portfolio-index__img--tablet {
       @media only screen and (min-width: $bp-md) {
+        grid-column: 7 / 13;
+        justify-self: end;
+      }
+    }
+    .portfolio-index__img--desktop {
+      @media only screen and (min-width: $bp-xl) {
         grid-column: 7 / 13;
         justify-self: end;
       }
@@ -126,16 +168,34 @@
       @media only screen and (min-width: $bp-md) {
         grid-column: 1 / 6;
       }
+      @media only screen and (min-width: $bp-lg) {
+        grid-column: 3 / 7;
+      }
+      @media only screen and (min-width: $bp-xl) {
+        grid-column: 3 / 6;
+      }
     }
     .paragraph {
       @media only screen and (min-width: $bp-md) {
         grid-column: 1 / 6;
+      }
+      @media only screen and (min-width: $bp-lg) {
+        grid-column: 3 / 7;
+      }
+      @media only screen and (min-width: $bp-xl) {
+        grid-column: 3 / 6;
       }
     }
 
     .btn {
       @media only screen and (min-width: $bp-md) {
         grid-column: 1 / 6;
+      }
+      @media only screen and (min-width: $bp-lg) {
+        grid-column: 3 / 7;
+      }
+      @media only screen and (min-width: $bp-xl) {
+        grid-column: 3 / 6;
       }
     }
   }
