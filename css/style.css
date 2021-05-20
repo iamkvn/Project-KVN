@@ -39,7 +39,8 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
     line-height: 4rem;
-    font-size: 4rem; }
+    font-size: 4rem;
+    font-family: 'Syncopate', sans-serif; }
   .heading-2 {
     font-weight: 600;
     line-height: 4rem;
@@ -199,14 +200,12 @@ a {
     .header {
       height: 70rem;
       padding-top: 12rem; } }
-  .header .heading-1 {
-    text-shadow: 3px 3px 10px #a2a5ad; }
-    @media only screen and (min-width: 48em) {
-      .header .heading-1 {
-        font-size: 5rem; } }
-    @media only screen and (min-width: 64em) {
-      .header .heading-1 {
-        font-size: 6rem; } }
+  @media only screen and (min-width: 48em) {
+    .header .heading-1 {
+      font-size: 5rem; } }
+  @media only screen and (min-width: 64em) {
+    .header .heading-1 {
+      font-size: 6rem; } }
   .header .paragraph {
     color: var(--color-dark-gray); }
     @media only screen and (min-width: 90em) {
