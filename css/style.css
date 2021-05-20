@@ -206,43 +206,46 @@ a {
         font-size: 5rem; } }
     @media only screen and (min-width: 64em) {
       .header .heading-1 {
-        font-size: 5.5rem; } }
+        font-size: 6rem; } }
   .header .paragraph {
     color: var(--color-dark-gray); }
+    @media only screen and (min-width: 90em) {
+      .header .paragraph {
+        font-size: 2rem; } }
 
 .section-about {
   margin-bottom: 15rem; }
   @media only screen and (min-width: 48em) {
     .section-about {
       margin-bottom: 3rem; } }
-  .section-about__profile {
+  .section-about__img {
     grid-column: 1 / 13;
     margin-bottom: 5rem;
     justify-self: center;
     box-shadow: 5px 5px 10px #a2a5ad; }
     @media only screen and (min-width: 48em) {
-      .section-about__profile {
+      .section-about__img {
         margin-bottom: 0; } }
     @media only screen and (min-width: 64em) {
-      .section-about__profile {
+      .section-about__img {
         justify-self: start; } }
     @media only screen and (min-width: 48em) {
-      .section-about__profile--mobile {
+      .section-about__img--mobile {
         display: none; } }
-    .section-about__profile--tablet {
+    .section-about__img--tablet {
       display: none; }
       @media only screen and (min-width: 48em) {
-        .section-about__profile--tablet {
+        .section-about__img--tablet {
           display: block;
           grid-column: 1 / 6;
           grid-row: 1 / 4; } }
       @media only screen and (min-width: 90em) {
-        .section-about__profile--tablet {
+        .section-about__img--tablet {
           display: none; } }
-    .section-about__profile--laptop {
+    .section-about__img--desktop {
       display: none; }
       @media only screen and (min-width: 90em) {
-        .section-about__profile--laptop {
+        .section-about__img--desktop {
           display: block;
           grid-column: 1 / 7;
           grid-row: 1 / 4; } }
@@ -328,10 +331,32 @@ a {
       .section-contact .heading-2 {
         grid-column: 1 / 7;
         text-align: left;
-        font-size: 4rem; } }
+        font-size: 4rem;
+        width: 14ch;
+        justify-self: start; } }
     @media only screen and (min-width: 90em) {
       .section-contact .heading-2 {
-        grid-column: 1 / 5; } }
+        grid-column: 1 / 6; } }
+    @media only screen and (min-width: 48em) {
+      .section-contact .heading-2::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0.1rem;
+        background-color: var(--color-grayish-dark-blue);
+        opacity: 0.2;
+        position: relative;
+        top: 4.5rem;
+        left: 38rem;
+        width: 12rem; } }
+    @media only screen and (min-width: 64em) {
+      .section-contact .heading-2::before {
+        width: 25rem;
+        left: 41rem; } }
+    @media only screen and (min-width: 90em) {
+      .section-contact .heading-2::before {
+        width: 55rem;
+        left: 45rem; } }
   .section-contact .btn {
     grid-column: 1 / 13;
     justify-self: center;
@@ -344,25 +369,6 @@ a {
       .section-contact .btn {
         grid-column: 11 / 13;
         justify-self: end; } }
-    @media only screen and (min-width: 48em) {
-      .section-contact .btn::before {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 0.1rem;
-        background-color: var(--color-grayish-dark-blue);
-        opacity: 0.2;
-        position: relative;
-        top: 1.5rem;
-        right: 18rem; } }
-    @media only screen and (min-width: 64em) {
-      .section-contact .btn::before {
-        width: 200%;
-        right: 30rem; } }
-    @media only screen and (min-width: 90em) {
-      .section-contact .btn::before {
-        width: 550%;
-        right: 65rem; } }
 
 .portfolio-index {
   margin-bottom: 10rem; }
@@ -376,7 +382,8 @@ a {
       height: 50rem; } }
   .portfolio-index__img {
     grid-column: 1 / 13;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    box-shadow: 5px 5px 10px #a2a5ad; }
     @media only screen and (min-width: 48em) {
       .portfolio-index__img {
         grid-row: 1 / 4;
